@@ -12,8 +12,8 @@ from sklearn.cross_validation import cross_val_score
 from sklearn.metrics import r2_score, mean_squared_error
 
 np.random.seed(0)
-path_train = '/Users/cedric/Documents/projetMachineLearninP1/train.csv'
-path_test = '/Users/cedric/Documents/projetMachineLearninP1/test.csv'
+path_train = '/Users/cedric/Documents/projetMachineLearninP1/Kaggle/safeDriverPrediction/train.csv'
+path_test = '/Users/cedric/Documents/projetMachineLearninP1/Kaggle/safeDriverPrediction/test.csv'
 
 df_tot = pd.read_csv(path_train)
 df_Data = pd.read_csv(path_test)
@@ -61,7 +61,7 @@ def ModelGradientboosting(df = df_tot, sample = 10000, ID = 'id',target='target'
     df_Final = pd.concat([df_result, pd.DataFrame(df_Data.index)], axis =1)
     del df_Final['proba0']
     df_Final.set_index(ID, inplace=True)
-#    df_Final.to_csv('/Users/cedric/Documents/result2.csv', sep=',')
+#    df_Final.to_csv('/Users/cedric/Documents/projetMachineLearninP1/Kaggle/safeDriverPrediction/result2.csv', sep=',')
     
     
 #    caca= df_result[df_result['proba1']>0.3]

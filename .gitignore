@@ -1,5 +1,1 @@
-test.csv
-sample_submission.csv
-train.csv
 *.csv
-/Kaggle/safeDriverPrediction/result.csv
