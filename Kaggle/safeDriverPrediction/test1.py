@@ -94,3 +94,4 @@ def ModelGradientboosting(df = df_tot, df_Data = df_Data, sample = 400000, ID = 
 
 
 Result = ModelGradientboosting()
+# best one for now: 'exponential', 0.01, 80, 4, 2 1,0, auto
